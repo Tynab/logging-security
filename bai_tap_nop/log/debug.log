@@ -1,4 +1,0 @@
-2022-07-13 00:02:49,612 DEBUG HelloController:15 - A Debug message
-2022-07-13 00:02:49,614 INFO  HelloController:16 - A Info message
-2022-07-13 00:02:49,614 WARN  HelloController:17 - A Warning message
-2022-07-13 00:02:49,615 ERROR HelloController:18 - A Error message
