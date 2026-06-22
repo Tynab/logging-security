@@ -5,29 +5,27 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>4.1.0</version>
+		<relativePath/>
 	</parent>
 	<groupId>com.yan</groupId>
-	<artifactId>bai_tap_nop</artifactId>
+	<artifactId>logging-security</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bai_tap_nop</name>
-	<description>Demo project for Spring Boot</description>
+	<name>logging-security</name>
+	<description>Minh họa cấu hình logging an toàn với Spring Boot và Logback</description>
 	<properties>
-		<java.version>11</java.version>
+		<!-- Java 17 là phiên bản tối thiểu của Spring Boot 4.1. -->
+		<java.version>17</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+		<!-- Cung cấp Spring MVC và máy chủ web nhúng cho endpoint minh họa. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
+		<!-- Bộ thư viện kiểm thử được giới hạn trong test classpath. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -37,6 +35,7 @@
 
 	<build>
 		<plugins>
+			<!-- Đóng gói ứng dụng thành tệp JAR có thể chạy độc lập. -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
